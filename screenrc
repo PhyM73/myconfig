@@ -1,0 +1,7 @@
+shell -$SHELL
+vbell off
+
+termcapinfo xterm|xterms|xs ti@:te=\E[2J
+
+defscrollback 10000
+
