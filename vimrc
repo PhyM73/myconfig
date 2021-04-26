@@ -15,7 +15,7 @@ endif
 " differently from regular Vi. They are highly recommended though.
 "
 " UI
-set number
+" set number
 set showcmd
 set textwidth=100
 set showmatch
