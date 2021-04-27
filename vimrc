@@ -16,11 +16,14 @@ endif
 "
 " UI
 " set number
+set ruler
 set showcmd
+set showmode
 set textwidth=100
 set showmatch
 
 set smartcase
+set ignorecase
 set incsearch
 set hlsearch
 
@@ -31,12 +34,10 @@ set smartindent
 set smarttab
 set softtabstop=4
 
-set ruler
-
 set undolevels=1000
 set backspace=indent,eol,start
 
-
+set noerrorbells
 "" Colors and Fonts
 syntax enable
 
@@ -50,3 +51,6 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+set wildmenu
+set wildmode=longest:list,full
