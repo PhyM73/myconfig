@@ -95,3 +95,11 @@ if [ -f /cvmfs/cms.cern.ch/ ]; then
 fi
 
 export PS1='[\u\[\e[34m\]@\[\e[0m\]\h \W]\$ '
+
+# enhance cd command
+shopt -s cdspell
+export CDPATH=.:~
+
+# enhance history search
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'

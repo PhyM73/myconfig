@@ -29,4 +29,3 @@ if [ -z "$included_init" ]; then
    source init_bash.sh
    echo 'source ~/.local/config/init_bash.sh' >> ~/.bashrc
 fi
-

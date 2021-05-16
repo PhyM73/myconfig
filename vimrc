@@ -19,8 +19,10 @@ endif
 set ruler
 set showcmd
 set showmode
-set textwidth=100
 set showmatch
+set noerrorbells
+set novisualbell
+set t_vb=
 
 set smartcase
 set ignorecase
