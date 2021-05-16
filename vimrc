@@ -15,7 +15,7 @@ endif
 " differently from regular Vi. They are highly recommended though.
 "
 " UI
-" set number
+set number
 set ruler
 set showcmd
 set showmode
@@ -34,19 +34,26 @@ set expandtab
 set shiftwidth=4
 set smartindent
 set smarttab
+set tabstop=4
 set softtabstop=4
 
 set undolevels=1000
 set backspace=indent,eol,start
 
 set noerrorbells
+set lazyredraw
+
+set foldenable
+
 "" Colors and Fonts
 syntax enable
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
+
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -56,3 +63,8 @@ set ffs=unix,dos,mac
 
 set wildmenu
 set wildmode=longest:list,full
+
+" Movement
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
