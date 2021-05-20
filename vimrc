@@ -43,8 +43,6 @@ set backspace=indent,eol,start
 set noerrorbells
 set lazyredraw
 
-set foldenable
-
 "" Colors and Fonts
 syntax enable
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE
