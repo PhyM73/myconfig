@@ -94,7 +94,7 @@ if [ -f /cvmfs/cms.cern.ch/ ]; then
     export CMSSW_GIT_REFERENCE=/cvmfs/cms.cern.ch/cmssw.git.daily
 fi
 
-export PS1='[\u\[\e[34m\]@\[\e[0m\]\h \W]\$ '
+export PS1='[\u\e[36m@\e[0m\h \e[1;34m\W\e[0m]\$ '
 
 # enhance cd command
 shopt -s cdspell

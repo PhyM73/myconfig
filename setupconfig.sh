@@ -1,6 +1,6 @@
 #! /bin/bash
 
-git pull
+git pull || exit $?
 
 git config --global user.github PhyM73
 git config --global alias.st status
