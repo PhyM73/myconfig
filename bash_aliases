@@ -3,8 +3,8 @@ alias ll='ls -AhlF --color=auto'
 alias la='ls -Ah'
 alias l='ls -CFh'
 alias l.='ls -d .* --color=tty'         # short listing, only hidden files - .*
-alias ltime='ls -lathF'                 # long, sort by newest to oldest
-alias Ltime='ls -latrhF'                # long, sort by oldest to newest
+alias ltime='ls -lAthF'                 # long, sort by newest to oldest
+alias Ltime='ls -lAtrhF'                # long, sort by oldest to newest
 alias lchange='ls -lcr'                 # sort by change time
 alias lh='ls -lSrh'                     # sort by size human readable
 alias grep='grep --color=auto'
