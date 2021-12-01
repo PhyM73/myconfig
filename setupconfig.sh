@@ -1,6 +1,6 @@
 #! /bin/bash
 
-git pull || exit $?
+git pull 
 
 git config --global user.github PhyM73
 git config --global alias.st status
@@ -15,7 +15,7 @@ git config --global commit.template ~/.gitmessage.txt
 cp -u gitmessage.txt ~/.gitmessage.txt
 
 cp vimrc ~/.vimrc
-cp -u tuna_condarc ~/.condarc
+#cp -u tuna_condarc ~/.condarc
 cp screenrc ~/.screenrc
 cp bash_aliases ~/.bash_aliases
 

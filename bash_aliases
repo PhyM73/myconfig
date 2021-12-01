@@ -18,4 +18,4 @@ alias path='echo -e ${PATH//:/\\n}'     # path:         Echo all executable Path
 alias jl='jupyter lab --no-browser'
 alias root='root -l'
 
-
+alias lxplus='ssh lxplus'
