@@ -14,7 +14,10 @@ alias cp='cp -v'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
 alias path='echo -e ${PATH//:/\\n}'     # path:         Echo all executable Paths
+alias ..='cd ..'
 
+alias cdbase='conda activate base'
+alias cddeact='conda deactivate'
 alias jl='jupyter lab --no-browser'
 alias root='root -l'
 

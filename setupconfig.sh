@@ -12,6 +12,7 @@ git config --global alias.df "diff --color"
 git config --global push.default simple
 git config --global color.ui auto
 git config --global commit.template ~/.gitmessage.txt
+git config --global core.editor vim
 cp -u gitmessage.txt ~/.gitmessage.txt
 
 cp vimrc ~/.vimrc
