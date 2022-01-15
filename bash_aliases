@@ -13,8 +13,11 @@ alias egrep='egrep --color=auto'
 alias cp='cp -v'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
-alias path='echo -e ${PATH//:/\\n}'     # path:         Echo all executable Paths
+alias path='echo -e ${PATH//:/\\n}'     # path:  Echo all executable Paths
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias c-='cd -'
 
 alias cdbase='conda activate base'
 alias cddeact='conda deactivate'
