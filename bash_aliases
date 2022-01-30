@@ -24,4 +24,6 @@ alias cddeact='conda deactivate'
 alias jl='jupyter lab --no-browser'
 alias root='root -l'
 
+alias bap='bat -P'
+
 alias lxplus='ssh lxplus'
