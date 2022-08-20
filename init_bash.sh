@@ -89,7 +89,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # User specific aliases and functions
-if [ -f /cvmfs/cms.cern.ch/ ]; then
+if [ -e /cvmfs/cms.cern.ch/ ]; then
     source /cvmfs/cms.cern.ch/cmsset_default.sh
     export CMSSW_GIT_REFERENCE=/cvmfs/cms.cern.ch/cmssw.git.daily
 fi

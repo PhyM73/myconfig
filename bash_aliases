@@ -27,3 +27,8 @@ alias root='root -l'
 alias bap='bat -P'
 
 alias lxplus='ssh lxplus'
+
+alias cmsnev='cmsenv'
+alias csmenv='cmsenv'
+alias cmesnv='cmsenv'
+alias cmsevn='cmsenv'
