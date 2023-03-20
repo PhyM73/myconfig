@@ -11,22 +11,21 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 git config --global alias.df "diff --color"
 git config --global push.default simple
 git config --global color.ui auto
-git config --global commit.template ~/.gitmessage.txt
+git config --global commit.template ./gitmessage.txt
 git config --global core.editor vim
-cp -u gitmessage.txt ~/.gitmessage.txt
 
 cp vimrc ~/.vimrc
 #cp -u tuna_condarc ~/.condarc
 cp screenrc ~/.screenrc
-cp bash_aliases ~/.bash_aliases
+cp myaliases ~/.my_aliases
 
 if [ ! -d "~/.local/config" ]; then
     mkdir -p ~/.local/config
 fi
-cp init_bash.sh ~/.local/config/
+cp init_zsh.sh ~/.local/config/
 
-included_init=`grep 'source ~/.local/config/init_bash.sh' ~/.bashrc`
+included_init=`grep 'source ~/.local/config/init_zsh.sh' ~/.zshrc`
 if [ -z "$included_init" ]; then
-   source init_bash.sh
-   echo 'source ~/.local/config/init_bash.sh' >> ~/.bashrc
+   source init_zsh.sh
+   echo 'source ~/.local/config/init_zsh.sh' >> ~/.zshrc
 fi
