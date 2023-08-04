@@ -47,6 +47,7 @@ set lazyredraw
 "" Colors and Fonts
 syntax enable
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE
+highlight Visual ctermfg=Gray 
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
