@@ -101,7 +101,10 @@ if [ -e /cvmfs/cms.cern.ch/ ]; then
     export CMSSW_GIT_REFERENCE=/cvmfs/cms.cern.ch/cmssw.git.daily
 fi
 
-export PROMPT='%(?.%F{green}@.%F{red}?%?)%f%m:%F{cyan}%1~%f $(git_prompt_info)'
+export RPROMPT='%F{blue}%D{[%H:%M:%S]}%f'
+export PROMPT='%(?.%F{green}@.%F{red}?%?)%f%m:%F{cyan}%5~%f $(git_prompt_info)'$'\n''%F{blue}>%f '
+
+# export PROMPT='%(?.%F{green}@.%F{red}?%?)%f%m:%F{cyan}%1~%f $(git_prompt_info)'
 
 # enhance cd command
 export CDPATH=.:~

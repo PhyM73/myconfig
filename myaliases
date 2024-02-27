@@ -35,3 +35,14 @@ alias cmsevn='cmsenv'
 alias cmsnev='cmsenv'
 alias csmenv='cmsenv'
 alias cmesnv='cmsenv'
+
+
+# slurm aliases
+alias sq='squeue -u $USER'
+alias sqall='squeue -u $USER -all'
+
+spy() { squeue | tail -n +2 | awk '{if($5=="R"){r[$4]++}else if(match($1,/_\[([0-9]+)-([0-9]+)\]/,a)){d=a[2]-a[1];j[$4]+=d;T+=d} j[$4]++; T++} END {for(n in j){if(r[n]==""){r[n]=0} printf "%7s / %-5s - %s\n",r[n],j[n],n } printf "%7s\n",T}'; }
+
+sqs() {squeue -o '  %16i %80j %3t %9u %.8M %.1D %20R %4P' -u ${USER} | grep "$1" | tail -n +2 | awk '{ if($3=="R"){r[$2]++;R++}else if(match($1,/_\[([0-9]+)-([0-9]+)\]/,a)){D=a[2]-a[1];t[$2]+=D;T+=D} t[$2]++; T++ sub(/_.+/,"",$1); d[$2][$1]++; } END {for(i in t){ printf "%5d/%-5d %-45s",r[i],t[i],i; for(j in d[i]){ printf " %s",j }; printf "\n" }; printf "%5d/%-5d",R,T};' | sort -n | grep "$1";}
+
+init-voms-proxy() {echo $VOMSUSERPASS | voms-proxy-init -voms cms -valid 192:00; }
