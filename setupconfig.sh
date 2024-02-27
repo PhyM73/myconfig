@@ -7,7 +7,6 @@ cp vimrc ~/.vimrc
 cp screenrc ~/.screenrc
 cp myaliases ~/.my_aliases
 
-
 git config --global user.github PhyM73
 git config --global alias.st status
 git config --global alias.co checkout
@@ -18,8 +17,11 @@ git config --global alias.df "diff --color"
 git config --global push.default simple
 git config --global color.ui auto
 git config --global commit.template ~/.gitmessage.txt
-git config --global core.editor vim
 
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+#cp -u tuna_condarc ~/.condarc
+#cp screenrc ~/.screenrc
+cp myaliases ~/.my_aliases
 
 if [ ! -d "~/.local/config" ]; then
     mkdir -p ~/.local/config

@@ -1,3 +1,27 @@
+" Use Vim not Vi
+set nocompatible
+
+" Vundle setup """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Bundle 'luochen1990/rainbow'
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
 if has("autocmd")
@@ -10,7 +34,8 @@ if has("autocmd")
    filetype plugin indent on
 endif
 
-set nocompatible
+" Buffers
+set hidden
    
 " UI
 set number
@@ -47,6 +72,7 @@ set lazyredraw
 "" Colors and Fonts
 syntax enable
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE
+highlight Visual ctermbg=Gray
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
