@@ -17,6 +17,8 @@ git config --global alias.df "diff --color"
 git config --global push.default simple
 git config --global color.ui auto
 git config --global commit.template ~/.gitmessage.txt
+git config --global --add oh-my-zsh.hide-status 1
+git config --global --add oh-my-zsh.hide-dirty 1
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 #cp -u tuna_condarc ~/.condarc
